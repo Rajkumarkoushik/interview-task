@@ -1,38 +1,244 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body li {
+  list-style: none;
+}
+body h1{
+  font-weight: 700;
+}
+body{
+  overflow-x: hidden;
+}
+body a{
+  text-decoration: none;
+  color: #fff;
+}
+.gap-25{
+  gap: 25px;
+}
+/* Header section . */
+/* nav section starts. */
+.header{
+  background: linear-gradient(176deg,#3176c0 4%,#343434 66%);
+}
+.nav-links li a{
+  padding: 10px;
+}
+.nav-links li a:hover{
+  text-decoration: underline;
+  background-color: #fff;
+  color: #3176c0;
+  border-radius: 4px;
+}
+.side-sticky{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  color: #fff;
+  background-color: #f70;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  z-index: +9999;
+}
+.side-sticky h6 a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.side-sticky h6{
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.head-section p{
+  font-size: 20px;
+}
+.btn{
+  background: #35bf2e;
+  border: 1px solid green;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
   text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 15px;
+}
+.btn:hover{
+    background: green;
+    color: #fff;
+}
+.btn-login{
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.btn-login:hover{
+  background-color: #fff;
+  transition: .3s;
+  color: #3176c0;
+}
+/* nav section ends. */
+/* Header section . */
+
+/* 2. Footer section starts. */
+.footer-links li{
+  border-right: 1px solid #333;
+  padding: 0 15px;
+  color: #333;
+  font-size: 16px;
+}
+.footer-links{
+  flex-wrap: wrap;
+}
+.footer-link{
+  border-right: none !important;
+}
+/* 2. Footer section ends. */
+
+/* 3.Fenix insights section starts. */
+.home-insights{
+  background: url("../public/assets/6_fenix_insight_tablet_screen.jpg");
+  background-position: 50%;
+  background-position-x: center;
+  background-size: cover;
+  margin: auto;
+  max-width: 2200px;
+  min-height: 700px;
+  position: relative;
+  top: 0;
+}
+.insight-content{
+  top: 200px;
+  left: 200px;
+}
+/* 3.Fenix insights section ends. */
+
+/* 4. Pro trail section starts. */
+.pro-select{
+  display: block;
+    width: 25%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 0 auto;
+    outline: none;
+}
+.pro-trail{
+  background: #1160b5;
+}
+.pro-trail-cards{
+  background-color: #fff;
+  min-height: 630px;
+}
+.pro-btn{
+  background-color: #a7dea4;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.pro-second-btn{
+  background: #35bf2e;
+  width: 100%;
+  margin: 15px 0;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+.pro-links{
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+.pro-list-items{
+  gap: 10px;
+  padding: 6px 0;
+}
+.pro-list-items i{
+  color: #f70;
+}
+.pro-list-items li{
+  font-size: 14px;
+  font-weight: 600;
+  color: #616161;
+}
+.pro-annual-btn{
+  background-color: transparent;
+}
+.pro-user-select{
+  width: 130px;
+  height: 35px;
+  border: 1px solid #c9bcbc;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+/* 4. Pro trail section ends. */
+
+/* 5. Home realtime section starts. */
+.home-realtime{
+  background-color: #e3e9ec;
+}
+.real-cards img{
+  width: 90%;
+}
+.real-cards p{
+  font-size: 20px;
+}
+/* 5. Home realtime section ends. */
+
+
+
+@media(max-width: 1200px){
+  .pro-trail-cards {
+    min-height: 700px;
+}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(max-width: 1023px){
+  .head-image img{
+    display: none;
+  }
+  .real-cards img {
+    width: 100%;
+  }
+  .pro-trail-cards {
+    min-height: 630px;
+  }
+  .pro-free-last{
+    min-height: 400px;
+  }
+  .insight-content {
+    left: 50px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width: 767px){
+  .pro-select {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .footer-links li{
+    border: none;
   }
+  .pro-second-card{
+    min-height: 350px;
+  }
+  .insight-content {
+    left: 13px;
+}
 }
