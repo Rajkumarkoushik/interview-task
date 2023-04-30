@@ -19,8 +19,8 @@ function Charts(props) {
 
   return (
       <>
-                <section className="charts container-fluid py-5">
-                    <div className="row">
+          <section className="charts container-fluid py-5">
+                    <div className="row ">
                         <div className="col-lg-6">
                             {/* Pie chart section starts. */}
                                 <PieChart width={250} height={250}>

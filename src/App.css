@@ -11,6 +11,9 @@ body h1{
 }
 body{
   overflow-x: hidden;
+  background: #343434;
+  width: 100%;
+
 }
 body a{
   text-decoration: none;
@@ -23,6 +26,7 @@ body a{
 /* nav section starts. */
 .header{
   background: linear-gradient(176deg,#3176c0 4%,#343434 66%);
+  max-height: 550px;
 }
 .nav-links li a{
   padding: 10px;
@@ -102,6 +106,9 @@ body a{
 }
 .footer-link{
   border-right: none !important;
+}
+.footer{
+  background-color: #fff;
 }
 /* 2. Footer section ends. */
 
@@ -208,6 +215,9 @@ body a{
 /* 6. Charts section starts */
 .charts{
   background: #1160b5;
+  position: relative;
+  z-index: +9;
+  width: 100%;
 }
 /* 6. Charts section ends */
 
