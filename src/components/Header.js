@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 
 function Header() {
+
+    const [showHam, setShowHam] = useState(false);
+
     return (
         <>
             <header className='header py-3'>
@@ -11,7 +14,7 @@ function Header() {
                     <div className="nav-logo">
                       <Link to="/"><img src=".\assets\fenix-insight-logo-white.png" alt="" /></Link>
                     </div>
-                    <div>
+                        <div className='navigation-tabs'>
                         <ul className="nav-links d-flex gap-25">
                             <li><Link to="/about">About Us</Link></li>
                             <li><Link to="contact">Contact Us</Link></li>
@@ -19,6 +22,18 @@ function Header() {
                             <li><Link to="/Started">Get Started Now</Link></li>
                             <li><Link to="/Login">Login</Link></li>
                         </ul>
+                    </div>
+                    {showHam && <div className='nav-hamburger'>
+                        <ul className="nav-links d-flex gap-25" style={{transform : showHam? "scale(1)" : "scale(0)"}}>
+                            <li><Link to="/about">About Us</Link></li>
+                            <li><Link to="contact">Contact Us</Link></li>
+                            <li><Link to="Pricing">Pricing Packages</Link></li>
+                            <li><Link to="/Started">Get Started Now</Link></li>
+                            <li><Link to="/Login">Login</Link></li>
+                        </ul>
+                        </div>}
+                    <div className='nav-hamburger' onClick={() => setShowHam(!showHam)}>
+                        <i className="fa-solid fa-bars hamburger" ></i>
                     </div>
                 </nav>
                 {/* Navigation section ends. */}

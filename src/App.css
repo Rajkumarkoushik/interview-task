@@ -27,6 +27,9 @@ body a{
 .nav-links li a{
   padding: 10px;
 }
+.nav-hamburger{
+  display: none;
+}
 .nav-links li a:hover{
   text-decoration: underline;
   background-color: #fff;
@@ -202,6 +205,21 @@ body a{
 }
 /* 5. Home realtime section ends. */
 
+/* 6. Charts section starts */
+.charts{
+  background: #1160b5;
+}
+/* 6. Charts section ends */
+
+/* 7. Powered by ai section starts. */
+.powered-ai{
+  background: #00213b;
+}
+.powered-ai p{
+  font-size: 20px;
+}
+/* 7. Powered by ai section ends. */
+
 
 
 @media(max-width: 1200px){
@@ -225,6 +243,27 @@ body a{
   }
   .insight-content {
     left: 50px;
+  }
+  .nav-links{
+    flex-direction: column;
+    position: absolute;
+    z-index: +99999;
+    left: 0;
+    background: #3176c0;
+    width: 100%;
+    top: 17%;
+    padding: 10px;
+    gap: 11px;
+  }
+  .nav-hamburger{
+    display: block;
+    color: #fff;
+  }
+  .nav-hamburger i{
+    font-size: 30px;
+  }
+  .navigation-tabs{
+    display: none !important;
   }
 }
 

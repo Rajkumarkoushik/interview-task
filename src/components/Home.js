@@ -35,12 +35,12 @@ function Home() {
       {/* Charts section ends. */}
 
       {/* Powered by AI section starts. */}
-        <section className="powered-ai">
+        <section className="powered-ai py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <h1>Powered by <br /> custom A.I.</h1>
-              <p>We combine Machine Learning, Natural Language Processing and lightning fast databases for results which are up-to-date and accurate.</p>
+              <h1 className='text-white'>Powered by <br /> custom A.I.</h1>
+              <p className='text-white py-2'>We combine Machine Learning, Natural Language Processing and lightning fast databases for results which are up-to-date and accurate.</p>
             </div>
           </div>
           </div>
@@ -104,7 +104,7 @@ function Home() {
                                               return (
                                                 <>
                                                   <div className="d-flex align-items-center pro-list-items">
-                                                  <i class="fa-sharp fa-solid fa-check"></i>
+                                                  <i className="fa-sharp fa-solid fa-check"></i>
                                                   <li key={eachList.id}>{eachList.item}</li>
                                                   </div>
                                                      
@@ -119,7 +119,7 @@ function Home() {
                       <div className="col-lg-4 col-md-6">
                         <div className="pro-trail-cards p-4 pro-second-card">
                           <div className="text-center">
-                            <h6>Pro</h6>
+                            <h5>Pro</h5>
                             <div className="d-flex justify-content-between align-items-center">
                               <div>
                                 <h5 className='mb-0'>£ 24.99</h5>
@@ -144,11 +144,11 @@ function Home() {
                           <div>
                             <ul className='px-0 pro-links'>
                               <div className="d-flex align-items-center pro-list-items">
-                                <i class="fa-sharp fa-solid fa-check"></i>
+                                <i className="fa-sharp fa-solid fa-check"></i>
                                 <li>All Benefits of Free Trial Access</li>
                               </div>
                               <div className="d-flex align-items-center pro-list-items">
-                                <i class="fa-sharp fa-solid fa-check"></i>
+                                <i className="fa-sharp fa-solid fa-check"></i>
                                 <li>Team Management</li>
                               </div>
                             </ul>
@@ -158,7 +158,7 @@ function Home() {
                       <div className="col-lg-4">
                         <div className="pro-trail-cards p-4 pro-free-last">
                           <div className="text-center">
-                            <h6>Enterprise</h6>
+                            <h5>Enterprise</h5>
                           </div>
                           <h4 className='py-3'>For Larger Organisations</h4>
                           <button className='pro-second-btn'>Get In Touch Now</button>
@@ -169,7 +169,7 @@ function Home() {
                                 return (
                                         <>   
                                           <div className="d-flex align-items-center pro-list-items">
-                                            <i class="fa-sharp fa-solid fa-check"></i>
+                                            <i className="fa-sharp fa-solid fa-check"></i>
                                             <li key={eachList.id}>{eachList.item}</li>
                                           </div>
                                         </>
